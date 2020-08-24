@@ -32,7 +32,6 @@ ffcbs_projections <- function(season, week, pos = c("QB", "RB", "WR", "TE", "K",
   x <- xml2::xml_find_all(x, "//table[@class = 'TableBase-table']")
   df <- rvest::html_table(x)[[1]]
   df <- tibble::tibble(df)
-  return(df)
   tidy_projections(df, pos)
 }
 
@@ -60,7 +59,6 @@ tidy_projections <- function(x, pos) {
   }
 
   x$Pos <- pos
-
 
   # re-order columns
   dplyr::select(x, "Player", "Pos", "Team", dplyr::everything())
