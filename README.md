@@ -15,11 +15,10 @@ The goal of ffcbs is to get CBS fantasy football projections.
 
 ## Installation
 
-You can install the released version of ffcbs from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the development version of ffcbs from github with:
 
 ``` r
-install.packages("ffcbs")
+remotes::install_github("dfs-with-r/ffcbs")
 ```
 
 ## Example
@@ -32,24 +31,23 @@ library(ffcbs)
 
 df <- ffcbs_projections(2020, 0, "QB")
 df
-#> # A tibble: 73 x 16
-#>    Player `gp\n          … `att\n         … `cmp\n         … `yds\n         …
-#>    <chr>             <int>            <int>            <int>            <int>
-#>  1 "L. J…               16              467              299             3521
-#>  2 "P. M…               16              559              362             4499
-#>  3 "D. P…               16              579              382             4702
-#>  4 "D. W…               16              517              346             4079
-#>  5 "J. A…               16              541              310             3555
-#>  6 "R. W…               16              478              321             3953
-#>  7 "T. B…               16              542              336             4497
-#>  8 "K. M…               16              559              364             3801
-#>  9 "M. R…               16              643              431             4783
-#> 10 "D. B…               16              517              367             3828
-#> # … with 63 more rows, and 11 more variables: `yds/g\n \n \n \n Passing Yards
-#> #   Per Game` <dbl>, `td\n \n \n \n Touchdowns Passes` <int>, `int\n \n \n \n
-#> #   Interceptions Thrown` <int>, `rate\n \n \n \n Passer Rating` <chr>, `att\n
-#> #   \n \n \n Rushing Attempts` <int>, `yds\n \n \n \n Rushing Yards` <int>,
-#> #   `avg\n \n \n \n Average Yards Per Rush` <dbl>, `td\n \n \n \n Rushing
-#> #   Touchdowns` <int>, `fl\n \n \n \n Fumbles Lost` <int>, `fpts\n \n \n \n
-#> #   Fantasy Points` <int>, `fppg\n \n \n \n Fantasy Points Per Game` <dbl>
+#> # A tibble: 73 x 18
+#>    Player Pos   Team  `Games Played` `Pass Attempts` `Pass Completio…
+#>    <chr>  <chr> <chr>          <int>           <int>            <int>
+#>  1 Lamar… QB    BAL               16             467              299
+#>  2 Patri… QB    KC                16             559              362
+#>  3 Dak P… QB    DAL               16             579              382
+#>  4 Desha… QB    HOU               16             517              346
+#>  5 Josh … QB    BUF               16             541              310
+#>  6 Russe… QB    SEA               16             478              321
+#>  7 Tom B… QB    TB                16             542              336
+#>  8 Kyler… QB    ARI               16             559              364
+#>  9 Matt … QB    ATL               16             643              431
+#> 10 Drew … QB    NO                16             517              367
+#> # … with 63 more rows, and 12 more variables: `Passing Yards` <int>, `Passing
+#> #   Yards Per Game` <dbl>, `Touchdowns Passes` <int>, `Interceptions
+#> #   Thrown` <int>, `Passer Rating` <chr>, `Rushing Attempts` <int>, `Rushing
+#> #   Yards` <int>, `Average Yards Per Rush` <dbl>, `Rushing Touchdowns` <int>,
+#> #   `Fumbles Lost` <int>, `Fantasy Points` <int>, `Fantasy Points Per
+#> #   Game` <dbl>
 ```

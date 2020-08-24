@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -24,10 +24,10 @@ The goal of ffcbs is to get CBS fantasy football projections.
 
 ## Installation
 
-You can install the released version of ffcbs from [CRAN](https://CRAN.R-project.org) with:
+You can install the development version of ffcbs from github with:
 
 ``` r
-install.packages("ffcbs")
+remotes::install_github("dfs-with-r/ffcbs")
 ```
 
 ## Example
