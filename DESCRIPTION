@@ -1,5 +1,5 @@
 Package: ffcbs
-Title: Scrape CBS fantasy footbal data
+Title: Scrape CBS fantasy football data
 Version: 0.0.1
 Authors@R: 
     person(given = "Robert",
