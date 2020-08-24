@@ -1,0 +1,26 @@
+Package: ffcbs
+Title: Scrape CBS fantasy footbal data
+Version: 0.0.1
+Authors@R: 
+    person(given = "Robert",
+           family = "Zamora",
+           role = c("aut", "cre"),
+           email = "zamora.rr@gmail.com")
+Description: Scrape CBS fantasy football data.
+License: GPL-3 + file LICENSE
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    dplyr,
+    httr,
+    rvest,
+    stringr,
+    tibble,
+    xml2
+Suggests: 
+    testthat (>= 2.1.0)
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1

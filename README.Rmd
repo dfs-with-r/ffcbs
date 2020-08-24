@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ffcbs
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/ffcbs)](https://CRAN.R-project.org/package=ffcbs)
+<!-- badges: end -->
+
+The goal of ffcbs is to get CBS fantasy football projections. 
+
+## Installation
+
+You can install the released version of ffcbs from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("ffcbs")
+```
+
+## Example
+
+This is a basic example which shows you how to get projections for week 0 (the preseason).
+
+```{r example}
+library(ffcbs)
+
+df <- ffcbs_projections(2020, 0, "QB")
+df
+```
