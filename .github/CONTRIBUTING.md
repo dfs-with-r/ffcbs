@@ -1,8 +1,6 @@
 # Contributing to ffcbs
 
-This outlines how to propose a change to ffcbs. For more detailed
-info about contributing to this, and other tidyverse packages, please see the
-[**development contributing guide**](https://rstd.io/tidy-contrib).
+This outlines how to propose a change to ffcbs. .
 
 ### Fixing typos
 
@@ -44,5 +42,3 @@ Please note that the ffcbs project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this
 project you agree to abide by its terms.
 
-### See tidyverse [development contributing guide](https://rstd.io/tidy-contrib)
-for further details.
